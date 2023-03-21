@@ -1,7 +1,7 @@
 <div x-data>
     <p class="text-xl text-gray-700">Color:</p>
 
-    <select wire:model="color_id" class="form-control w-full">
+    <select wire:model="color_id" class="form-control w-full" id="colorModa">
         <option value="" selected disabled>Seleccionar un color</option>
         @foreach ($colors as $color)
             <option value="{{$color->id}}">{{ __(ucfirst($color->name)) }}</option>
@@ -43,7 +43,7 @@
                 wire:loading.attr="disabled"
                 wire:target="addItem"
                 class="w-full"
-                color="orange">
+                color="orange" dusk="comprar">
                 Agregar al carrito de compras
             </x-button>
         </div>

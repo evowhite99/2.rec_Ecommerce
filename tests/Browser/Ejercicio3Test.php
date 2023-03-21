@@ -72,7 +72,7 @@ class Ejercicio3Test extends DuskTestCase
                 ->pause(200)
                 ->type('email', 'algo1234@gmail.com')
                 ->type('password', 'algo1234')
-                ->pause(100)
+                ->pause(300)
                 ->screenshot('3c')
                 ->press('INICIAR SESIÓN')
                 ->pause(200)

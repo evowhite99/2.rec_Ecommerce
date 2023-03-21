@@ -2,7 +2,7 @@
     <div>
         <p class="text-xl text-gray-700">Talla:</p>
 
-        <select wire:model="size_id" class="form-control w-full">
+        <select wire:model="size_id" id="sizeModa" class="form-control w-full">
             <option value="" selected disabled>Seleccione una talla</option>
 
             @foreach ($sizes as $size)
@@ -14,7 +14,7 @@
     <div class="mt-2">
         <p class="text-xl text-gray-700">Color:</p>
 
-        <select wire:model="color_id" class="form-control w-full">
+        <select wire:model="color_id" id="colorModa" class="form-control w-full">
             <option value="" selected disabled>Seleccione un color</option>
 
             @foreach ($colors as $color)
@@ -51,7 +51,7 @@
                 +
             </x-jet-secondary-button>
         </div>
-        <div class="flex-1">
+        <div class="comprar flex-1">
             <x-button
                 x-bind:disabled="$wire.qty > $wire.quantity"
                 wire:click="addItem"
