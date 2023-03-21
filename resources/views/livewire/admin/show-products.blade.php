@@ -5,7 +5,7 @@
                 Lista de productos
             </h2>
 
-            <x-button-link class="ml-auto" href="{{route('admin.products.create')}}">
+            <x-button-link dusk="agregarProducto" class="ml-auto" href="{{route('admin.products.create')}}">
                 Agregar producto
             </x-button-link>
         </div>
