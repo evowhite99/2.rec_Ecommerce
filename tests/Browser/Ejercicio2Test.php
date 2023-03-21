@@ -28,7 +28,7 @@ class Ejercicio2Test extends DuskTestCase
     *
     * @return void
     */
-    public function test_s3_tarea13() {
+    public function test_ejericio2_test() {
         $brand = Brand::factory()->create();
         $category = Category::factory()->create([
             'name' => 'categoria',
