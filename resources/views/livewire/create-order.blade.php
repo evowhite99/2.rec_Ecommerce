@@ -3,7 +3,7 @@
         <div class="bg-white rounded-lg shadow p-6">
             <div class="mb-4">
                 <x-jet-label value="Nombre de contacto"/>
-                <x-jet-input type="text"
+                <x-jet-input dusk="nombreContacto" type="text"
                              wire:model.defer="contact"
                              placeholder="Introduzca el nombre de la persona que recibirá el pedido"
                              class="w-full"/>
@@ -11,7 +11,7 @@
             </div>
             <div>
                 <x-jet-label value="Teléfono de contacto"/>
-                <x-jet-input type="text"
+                <x-jet-input dusk="telefonoContacto" type="text"
                              wire:model.defer="phone"
                              placeholder="Introduzca el teléfono de contacto"
                              class="w-full"/>
@@ -83,7 +83,7 @@
                 wire:loading.attr="disabled"
                 wire:target="create_order"
                 class="mt-6 mb-4"
-                wire:click="create_order">
+                wire:click="create_order" dusk="continuar">
                 Continuar con la compra
             </x-jet-button>
 

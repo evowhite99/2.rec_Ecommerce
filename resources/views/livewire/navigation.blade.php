@@ -84,7 +84,7 @@
             @endauth
         </div>
 
-        <div class="hidden md:block">
+        <div class="carrito hidden md:block">
             @livewire('dropdown-cart')
         </div>
     </div>
